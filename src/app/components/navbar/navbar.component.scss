@@ -1,0 +1,26 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.example-container {
+  width: 800px;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopping-cart-sidenav {
+  padding: 20px;
+  width: 35%;
+}
+
+@media (max-width: 1300px) {
+  .shopping-cart-sidenav {
+    width: 50%;
+  }
+}

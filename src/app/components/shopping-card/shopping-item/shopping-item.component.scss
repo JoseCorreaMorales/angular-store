@@ -1,0 +1,18 @@
+img {
+  width: 2.5rem;
+  border-radius: 3.5rem;
+}
+
+.product-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+

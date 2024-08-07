@@ -1,0 +1,14 @@
+<div class="product-item-container">
+  <div class="product">
+    <picture>
+      <img [src]="carItems.imageUrl">
+    </picture>
+    <h3>{{ carItems.name }}</h3>
+    <h3>{{ carItems.price }}</h3>
+    <button mat-icon-button>
+      <mat-icon (click)="onDeleteItemFromCar()">
+        close
+      </mat-icon>
+    </button>
+</div>
+</div>

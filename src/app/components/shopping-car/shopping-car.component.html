@@ -1,0 +1,19 @@
+<div class="shopping-cart-container">
+  <h1 class="shopping-cart-title">Items on Shopping Card</h1>
+
+  <div class="product-item-container">
+
+    <ng-container *ngFor="let item of carItems">
+      <shopping-item
+      [carItems]="item"
+      (carItemToDelete)="deleteItem($event)"
+      >
+    </shopping-item>
+    </ng-container>
+  </div>
+  <button  mat-flat-button class="shop-button">
+    <mat-icon>shop</mat-icon>
+    Comprar
+  </button>
+</div>
+

@@ -11,6 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './components/shared/material/material.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
+import { ProductsComponent } from './components/products/products.component';
+import { ProductItemComponent } from './components/products/product-item/product-item.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { HomeComponent } from './components/home/home.component';
     ShoppingCarComponent,
     ShoppingItemComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    ProductsComponent,
+    ProductItemComponent
   ],
   imports: [
     BrowserModule,

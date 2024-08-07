@@ -13,6 +13,7 @@ export class NavbarComponent implements OnInit {
   constructor(private scService : ShoppingCarService) { }
 
 
+  // Count products on shooping car
   get itemsCount() : number {
     return this.scService.itemsCount
   }

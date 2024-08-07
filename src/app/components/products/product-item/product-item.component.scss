@@ -1,0 +1,13 @@
+.product-card {  max-width: 18rem;
+}
+
+.product-image {
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+@media (max-width: 750px) {
+  .product-card {
+    max-width: auto;
+  }
+}

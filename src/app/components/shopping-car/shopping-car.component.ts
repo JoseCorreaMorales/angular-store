@@ -23,4 +23,8 @@ export class ShoppingCarComponent implements OnInit {
      this.scService.deleteItem(item)
   }
 
+  get total() : Number {
+     return this.scService.total
+  }
+
 }

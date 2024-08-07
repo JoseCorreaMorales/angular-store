@@ -3,6 +3,12 @@ img {
   border-radius: 3.5rem;
 }
 
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .product-item-container {
   display: flex;
   flex-direction: column;

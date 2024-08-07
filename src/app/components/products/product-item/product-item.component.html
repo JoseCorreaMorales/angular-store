@@ -1,0 +1,21 @@
+<mat-card class="product-card">
+
+  <img mat-card-image [src]="product.imageUrl" class="product-image" [alt]="product.name">
+  <mat-card-content>
+    <h2>{{product.name}}</h2>
+    <p>
+      {{product.description}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>
+      <mat-icon>favorite</mat-icon>
+      LIKE
+    </button>
+
+    <button mat-button (click)="addToCar(product)">
+      <mat-icon>shopping_cart</mat-icon>
+      ADD
+    </button>
+  </mat-card-actions>
+</mat-card>

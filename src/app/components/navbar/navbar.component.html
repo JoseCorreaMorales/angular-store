@@ -1,19 +1,21 @@
-<mat-toolbar>
-  <button class="example-icon" aria-label="Example icon-button with menu icon" mat-icon-button>
+<mat-toolbar class="nav-bar">
+
+  <button class="nav-icon" aria-label="Menu icon" mat-icon-button>
     <mat-icon>menu</mat-icon>
   </button>
   <span>MyStore</span>
-  <span class="example-spacer"></span>
+  <span class="nav-spacer"></span>
 
-  <button class="example-icon favorite-icon" (click)="toggleSideBar.toggle()" type="button"
-    aria-label="Example icon-button with heart icon" mat-button mat-icon-button>
+  <button class="nav-icon favorite-icon" (click)="toggleSideBar.toggle()" type="button"
+    aria-label="shopping car" mat-button mat-icon-button>
     <mat-icon>shopping_cart</mat-icon>
     <sup class="items-car">{{ itemsCount }}</sup>
   </button>
+
 </mat-toolbar>
 
-<!-- Side bar itself -->
+<!-- Side-bar itself -->
 <mat-drawer class="shopping-cart-sidenav" #toggleSideBar mode="side">
-  <!-- Side bar content -->
+  <!-- Side-bar content -->
   <shopping-car></shopping-car>
 </mat-drawer>

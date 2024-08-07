@@ -33,5 +33,12 @@ export class ShoppingCarService {
     this.carItems = this.carItems.filter(item => item != selectedItem)
   }
 
+  addItem(item : CarItem) : void {
+    this.carItems.push(item)
+  }
+
+  get total() : number {
+    return this.carItems.reduce((acc, {price}) => (acc +=price), 0)
+  }
 
 }

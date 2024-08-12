@@ -4,7 +4,7 @@
       <img [src]="carItems.imageUrl">
     </picture>
     <h3 class="truncate">{{ carItems.name }}</h3>
-    <h3>{{ carItems.price }}</h3>
+    <h3>{{ carItems?.price }}</h3> <!-- | number: "1.2-2" Pipe number to show only two decimals -->
     <button mat-icon-button>
       <mat-icon (click)="onDeleteItemFromCar()">
         close

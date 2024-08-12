@@ -1,21 +1,30 @@
 <mat-toolbar class="nav-bar">
-
   <button class="nav-icon" aria-label="Menu icon" mat-icon-button>
     <mat-icon>menu</mat-icon>
   </button>
+
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>dialpad</mat-icon>
+      <span>Redial</span>
+    </button>
+  </mat-menu>
+
   <span>MyStore</span>
   <span class="nav-spacer"></span>
 
-  <button class="nav-icon favorite-icon" (click)="toggleSideBar.toggle()" type="button"
-    aria-label="shopping car" mat-button mat-icon-button>
+  <!-- Shopping car element -->
+  <button class="nav-icon favorite-icon" (click)="toggleSideBar.toggle()" type="button" aria-label="shopping car" mat-button mat-icon-button>
     <mat-icon>shopping_cart</mat-icon>
     <sup class="items-car">{{ itemsCount }}</sup>
   </button>
-
 </mat-toolbar>
 
 <!-- Side-bar itself -->
-<mat-drawer class="shopping-cart-sidenav" #toggleSideBar mode="side">
+<mat-drawer class="shopping-cart-sidenav" [mode]="mode.value ?? 'side'" #toggleSideBar mode="side">
   <!-- Side-bar content -->
   <shopping-car></shopping-car>
 </mat-drawer>

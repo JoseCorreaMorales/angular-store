@@ -36,6 +36,25 @@ export class ProductsService {
       name: "Product 5",
       price: 59.99,
       description: "This is a short description of Product 5."
+    },
+    {
+      imageUrl: "https://via.placeholder.com/150",
+      name: "Product 6",
+      price: 79.99,
+      description: "This is a short description of Product 6."
+    },
+    {
+      imageUrl: "https://via.placeholder.com/150",
+      name: "Product 6",
+      price: 57.99,
+      description: "This is a short description of Product 7."
+    },
+    {
+      imageUrl: "https://via.placeholder.com/150",
+      name: "Product 6",
+      price: 24.99,
+      description: "This is a short description of Product 8."
     }
+
   ];
 }

@@ -9,7 +9,7 @@ export class ShoppingCarService {
     {
       imageUrl: "https://www.beatsbydre.com/content/dam/beats/web/product/headphones/studiopro-wireless/global/serp/studiopro-pdp-global-serp-black.jpg",
       name: "ITEM 1",
-      price: 200
+      price: 200.99
     },
     {
       imageUrl: "https://www.beatsbydre.com/content/dam/beats/web/product/headphones/studiopro-wireless/global/serp/studiopro-pdp-global-serp-black.jpg",
@@ -38,7 +38,7 @@ export class ShoppingCarService {
   }
 
   get total() : number {
-    return this.carItems.reduce((acc, {price}) => (acc +=price), 0)
+    return this.carItems.reduce((acc, {price}) => acc +=price, 0) * 100 / 100
   }
 
 }
